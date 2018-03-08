@@ -4,10 +4,6 @@
 apt-get update
 apt-get install qemu-user-static -y
 
-echo "Currently in directory:"
-pwd
-ls -l
-
 # Copy to build context
 cp /usr/bin/qemu-arm-static hooks/
 
