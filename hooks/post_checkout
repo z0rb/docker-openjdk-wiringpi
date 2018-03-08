@@ -1,4 +1,10 @@
 #!/bin/bash
 
-apt-get install qemu-user-static
+# Install emulation
+apt-get install qemu-user-static -y
+
+# Copy to build context
 cp /usr/bin/qemu-arm-static .
+
+# Register QEMU in build agent
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
