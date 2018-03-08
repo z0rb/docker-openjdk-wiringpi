@@ -1,6 +1,6 @@
 FROM arm32v7/openjdk AS build
 
-COPY ./hooks/qemu-arm-static /usr/bin/qemu-arm-static
+COPY /hooks/qemu-arm-static /usr/bin/qemu-arm-static
 
 RUN apt-get update && apt-get install -y \
   gcc \
