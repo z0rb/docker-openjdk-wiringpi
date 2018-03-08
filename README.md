@@ -1,3 +1,5 @@
+![Docker Build Status](https://img.shields.io/docker/build/z0rb/openjdk-wiringpi.svg?style=for-the-badge)
+
 # docker-openjdk-wiringpi
 arm32v7 OpenJDK docker image extended with WiringPi.
 

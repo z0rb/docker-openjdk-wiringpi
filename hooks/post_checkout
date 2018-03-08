@@ -6,9 +6,10 @@ apt-get install qemu-user-static -y
 
 echo "Currently in directory:"
 pwd
+ls -l
 
 # Copy to build context
-cp /usr/bin/qemu-arm-static .
+cp /usr/bin/qemu-arm-static hooks/
 
 # Register QEMU in build agent
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
