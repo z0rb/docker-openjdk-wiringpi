@@ -1,0 +1,4 @@
+#!/bin/bash
+
+apt-get install qemu-user-static
+cp /usr/bin/qemu-arm-static .
